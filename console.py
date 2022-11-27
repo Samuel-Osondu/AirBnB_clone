@@ -149,8 +149,8 @@ class HBNBCommand(cmd.Cmd):
                         obj.__dict__[tokens[2]] = tokens[3]
                         obj.updated_at = datetime.now()
                         storage.save()
-    else:
-        print("** class doesn't exist **")
+            else:
+                print("** class doesn't exist **")
 
 if __name__ == "__main__":
     HBNBCommand().cmdloop()i
